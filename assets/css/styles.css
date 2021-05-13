@@ -1,0 +1,657 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #212141;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(/assets/svg/theNightSky.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Jost, sans-serif;
+    font-size: calc(16px + (21 - 16) * ((100vw - 300px)/ (2500 - 300)));
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFD700;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: .0700em;
+    text-transform: uppercase;
+}
+
+h1 {font-size: calc(33px + (99 - 33) * ((100vw - 300px)/ (2500 - 300)));}
+h2 {font-size: calc(30px + (55 - 30) * ((100vw - 300px)/ (2500 - 300)));}
+h3 {font-size: calc(27px + (33 - 27) * ((100vw - 300px)/ (2500 - 300)));}
+h4 {font-size: calc(24px + (25 - 24) * ((100vw - 300px)/ (2500 - 300)));}
+h5 {font-size: calc(21px + (23 - 21) * ((100vw - 300px)/ (2500 - 300)));}
+h6 {font-size: calc(18px + (21 - 18) * ((100vw - 300px)/ (2500 - 300)));}
+
+p {
+    max-width: calc(45ch + (75 - 45) * ((100vw - 300px)/ (2500 - 300)));
+    color: #EEBE57;
+    font-family: jost, sans-serif;
+    letter-spacing: .0625em;
+    line-height: 1.9
+}
+
+dt {
+    color: #FFD700;
+    font-family: 'Roboto',
+    sans-serif;
+    font-weight: 500;
+    letter-spacing: .0700em;
+    text-transform: uppercase;
+}
+
+dd {
+    max-width: calc(45ch + (75 - 45) * ((100vw - 300px)/ (2500 - 300)));
+    color: #EEBE57;
+    font-family: jost, sans-serif;
+    letter-spacing: .0625em;
+    line-height: 1.9
+}
+
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+
+svg text .saying-proverb-quote {
+    font-size: 250px;
+    font-weight: 900;
+    color: #171733;
+    font-family: jost, sans-serif;
+    letter-spacing: .0625em;
+    line-height: 1.9
+}
+
+svg text .saying-proverb-quote-author {
+    font-size: 200px;
+    font-style: italic;
+    color: #171733;
+    font-family: jost, sans-serif;
+    letter-spacing: .0625em;
+    line-height: 1.9
+}
+
+svg text .kartasi-story-title {
+    font-size: 290px;
+    font-weight: 900;
+    color: #171733;
+    font-family: jost,
+    sans-serif;
+    letter-spacing: .0625em;
+    line-height: 1.9
+}
+
+svg text .kartasi-story-text {
+    font-size: 150px;
+    font-weight: 300;
+    color: #171733;
+    font-family: jost,
+    sans-serif;
+    letter-spacing: .0625em;
+    line-height: 1.9
+}
+
+svg text .kartasi-story-text-emphasized {
+    font-size: 150px;
+    font-weight: 900;
+    color: #171733;
+    font-family: jost,
+    sans-serif;
+    letter-spacing: .0625em;
+    line-height: 1.9
+}
+
+blockquote {
+    color: #FFBF00;
+}
+
+figcaption {
+    color: #FFD700;
+}
+
+a {
+    text-decoration: none;
+    color: #FFD700;
+}
+
+footer p a {
+    max-width: 100%;
+}
+
+small {
+    color: #FFD700;
+}
+
+
+fieldset {
+    color: #FFD700;
+    border: 0.1rem solid #FFC207;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+
+legend {
+    color: #FFD700;
+    font-family: jost, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: .0625em;
+}
+
+label {
+    color: #FFD700;
+    font-family: jost, sans-serif;
+    font-weight: bold;
+    letter-spacing: .0625em;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    border: 0.1rem solid #FFC207;
+    border-radius: 0.3rem;
+    letter-spacing: .0625em;
+    -webkit-transition: 0.5s;
+    transition: 50ms;
+    outline: none;
+}
+
+input[type=text]:focus {border: 0.23rem solid #FFC207;}
+
+input[type=email]:focus {border: 0.23rem solid #FFC207;}
+
+textarea:focus {border: 0.23rem solid #FFC207;}
+
+input[type=email] {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    border: 0.1rem solid #FFC207;
+    border-radius: 0.3rem;
+    letter-spacing: .0625em;
+    -webkit-transition: 0.5s;
+    transition: 50ms;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    border: 0.1rem solid #FFC207;
+    border-radius: 0.3rem;
+    letter-spacing: .0625em;
+    -webkit-transition: 0.5s;
+    transition: 50ms;
+    outline: none;
+}
+
+button {
+    background-color: #FFC207;
+    border: 0.1rem solid #FFC207;
+    border-radius: 0.3rem;
+    color: #212141;
+    font-size: 1rem;
+    letter-spacing: .0625em;
+    padding: 0.7rem;
+    -webkit-transition: 0.5s;
+    transition: 50ms;
+    outline: none;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.button {
+    background-color: transparent;
+    border: 0.1rem solid #FFC207;
+    border-radius: 0.3rem;
+    color: #FFC207;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .0625em;
+    padding: 0.7rem;
+    -webkit-transition: 0.5s;
+    transition: 50ms;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #FFC207;
+    color: #212141;
+}
+
+
+
+.prolonged-text {
+    display: none;
+}
+
+#ukurasaIntroHomepage,
+#blogIntroHomepage,
+#portfolioIntroHomepage,
+#thankyouContentHomepage,
+#theSunsetUkurasaPage,
+#theFullMoonUkurasaPage,
+#thankyouContentUkurasapage,
+#kasukuExerciseBookBlogpage,
+#sayingsProversExpressionsBlogpage,
+#kartasiExerciseBookBlogpage,
+#StoriesBlogpage,
+#thankyouContentBlogpage,
+#mtaliiSiteLayout,
+#mtaliiSiteProject,
+#personalPortfolioSiteLayout,
+#personalPortfolioSiteProject,
+#thankyouContentPortfoliopage,
+#theKenyanMap {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@keyframes homeDeskKasukuBookCoverDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+@-webkit-keyframes homeDeskKasukuBookCoverDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+@-moz-keyframes homeDeskKasukuBookCoverDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+@-o-keyframes homeDeskKasukuBookCoverDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+
+#homeDeskKasukuBookCover {
+    animation: homeDeskKasukuBookCoverDrawing 0.05ms ease-in-out 0ms forwards infinite;
+    -webkit-animation: homeDeskKasukuBookCoverDrawing 30000ms ease-in-out 0ms forwards infinite;
+    -moz-animation: homeDeskKasukuBookCoverDrawing 30000ms ease-in-out 0ms forwards infinite;
+    -o-animation: homeDeskKasukuBookCoverDrawing 30000ms ease-in-out 0ms forwards infinite;
+}
+
+@keyframes homeDeskKasukuBookCoverDecoDrawing {0% {stroke-width: 5;stroke-dashoffset: 165529.359375;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #59393F;}}
+@-webkit-keyframes homeDeskKasukuBookCoverDecoDrawing {0% {stroke-width: 5;stroke-dashoffset: 165529.359375;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #59393F;}}
+@-moz-keyframes homeDeskKasukuBookCoverDecoDrawing {0% {stroke-width: 5;stroke-dashoffset: 165529.359375;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #59393F;}}
+@-o-keyframes homeDeskKasukuBookCoverDecoDrawing {0% {stroke-width: 5;stroke-dashoffset: 165529.359375;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #59393F;}}
+
+#homeDeskKasukuBookCoverDeco {
+    animation: homeDeskKasukuBookCoverDecoDrawing 0.05ms ease-in-out 0ms forwards infinite;
+    -webkit-animation: homeDeskKasukuBookCoverDecoDrawing 10000ms ease-in-out 0ms forwards infinite;
+    -moz-animation: homeDeskKasukuBookCoverDecoDrawing 10000ms ease-in-out 0ms forwards infinite;
+    -o-animation: homeDeskKasukuBookCoverDecoDrawing 10000ms ease-in-out 0ms forwards infinite;
+}
+
+#homeDeskKartasiBookCover {
+    animation: homeDeskKartasiBookCoverDrawing 0.05ms ease-in-out 0ms forwards infinite;
+    -webkit-animation: homeDeskKartasiBookCoverDrawing 30000ms ease-in-out 0ms forwards infinite;
+    -moz-animation: homeDeskKartasiBookCoverDrawing 30000ms ease-in-out 0ms forwards infinite;
+    -o-animation: homeDeskKartasiBookCoverDrawing 30000ms ease-in-out 0ms forwards infinite;
+}
+@keyframes homeDeskKartasiBookCoverDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+@-webkit-keyframes homeDeskKartasiBookCoverDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+@-moz-keyframes homeDeskKartasiBookCoverDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+@-o-keyframes homeDeskKartasiBookCoverDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+
+#homeDeskKartasiBookRedStripe {
+    animation: homeDeskKartasiBookRedStripeDrawing 0.05ms ease-in-out 0ms forwards infinite;
+    -webkit-animation: homeDeskKartasiBookRedStripeDrawing 30000ms ease-in-out 0ms forwards infinite;
+    -moz-animation: homeDeskKartasiBookRedStripeDrawing 30000ms ease-in-out 0ms forwards infinite;
+    -o-animation: homeDeskKartasiBookRedStripeDrawing 30000ms ease-in-out 0ms forwards infinite;
+}
+
+@keyframes homeDeskKartasiBookRedStripeDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+@-webkit-keyframes homeDeskKartasiBookRedStripeDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+@-moz-keyframes homeDeskKartasiBookRedStripeDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+@-o-keyframes homeDeskKartasiBookRedStripeDrawing {0% {fill-opacity: 0;}100% {fill-opacity: 1;}}
+
+#homeDeskKartasiBookLogoPart1 {
+    animation: homeDeskKartasiBookLogoPart1Drawing 0.05ms ease-in-out 0ms forwards infinite;
+    -webkit-animation: homeDeskKartasiBookLogoPart1Drawing 10000ms ease-in-out 0ms forwards infinite;
+    -moz-animation: homeDeskKartasiBookLogoPart1Drawing 10000ms ease-in-out 0ms forwards infinite;
+    -o-animation: homeDeskKartasiBookLogoPart1Drawing 10000ms ease-in-out 0ms forwards infinite;
+}
+
+@keyframes homeDeskKartasiBookLogoPart1Drawing {0% {stroke-width: 5;stroke-dashoffset: 5670.5869140625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FEFFFF;}}
+@-webkit-keyframes homeDeskKartasiBookLogoPart1Drawing {0% {stroke-width: 5;stroke-dashoffset: 5670.5869140625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FEFFFF;}}
+@-moz-keyframes homeDeskKartasiBookLogoPart1Drawing {0% {stroke-width: 5;stroke-dashoffset: 5670.5869140625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FEFFFF;}}
+@-o-keyframes homeDeskKartasiBookLogoPart1Drawing {0% {stroke-width: 5;stroke-dashoffset: 5670.5869140625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FEFFFF;}}
+
+#homeDeskKartasiBookLogoPart2 {
+    animation: homeDeskKartasiBookLogoPart2Drawing 0.05ms ease-in-out 0ms forwards infinite;
+    -webkit-animation: homeDeskKartasiBookLogoPart2Drawing 10000ms ease-in-out 0ms forwards infinite;
+    -moz-animation: homeDeskKartasiBookLogoPart2Drawing 10000ms ease-in-out 0ms forwards infinite;
+    -o-animation: homeDeskKartasiBookLogoPart2Drawing 10000ms ease-in-out 0ms forwards infinite;
+}
+
+@keyframes homeDeskKartasiBookLogoPart2Drawing {0% {stroke-width: 5;stroke-dashoffset: 991.8937377929688;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FEFFFF;}}
+@-webkit-keyframes homeDeskKartasiBookLogoPart2Drawing {0% {stroke-width: 5;stroke-dashoffset: 991.8937377929688;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FEFFFF;}}
+@-moz-keyframes homeDeskKartasiBookLogoPart2Drawing {0% {stroke-width: 5;stroke-dashoffset: 991.8937377929688;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FEFFFF;}}
+@-o-keyframes homeDeskKartasiBookLogoPart2Drawing {0% {stroke-width: 5;stroke-dashoffset: 991.8937377929688;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FEFFFF;}}
+
+#homeDeskKartasiBookBrandName {
+    animation: homeDeskKartasiBookBrandNameDrawing 0.05ms ease-in-out 0ms forwards infinite;
+    -webkit-animation: homeDeskKartasiBookBrandNameDrawing 10000ms ease-in-out 0ms forwards infinite;
+    -moz-animation: homeDeskKartasiBookBrandNameDrawing 10000ms ease-in-out 0ms forwards infinite;
+    -o-animation: homeDeskKartasiBookBrandNameDrawing 10000ms ease-in-out 0ms forwards infinite;
+}
+
+@keyframes homeDeskKartasiBookBrandNameDrawing {0% {stroke-width: 5;stroke-dashoffset: 7403.4140625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FCFEFD;}}
+@-webkit-keyframes homeDeskKartasiBookBrandNameDrawing {0% {stroke-width: 5;stroke-dashoffset: 7403.4140625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FCFEFD;}}
+@-moz-keyframes homeDeskKartasiBookBrandNameDrawing {0% {stroke-width: 5;stroke-dashoffset: 7403.4140625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FCFEFD;}}
+@-o-keyframes homeDeskKartasiBookBrandNameDrawing {0% {stroke-width: 5;stroke-dashoffset: 7403.4140625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #FCFEFD;}}
+
+@keyframes brandTitleDrawing {0% {stroke-width: 3;stroke-dashoffset: 28537.765625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #F1C10D;}}
+@-webkit-keyframes brandTitleDrawing {0% {stroke-width: 3;stroke-dashoffset: 28537.765625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #F1C10D;}}
+@-moz-keyframes brandTitleDrawing {0% {stroke-width: 3;stroke-dashoffset: 28537.765625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #F1C10D;}}
+@-o-keyframes brandTitleDrawing {0% {stroke-width: 3;stroke-dashoffset: 28537.765625;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #F1C10D;}}
+
+#brandTitle {
+    animation: brandTitleDrawing 3500ms ease-in-out 0ms forwards infinite;
+    -webkit-animation: brandTitleDrawing 3500ms ease-in-out 0ms forwards infinite;
+    -moz-animation: brandTitleDrawing 3500ms ease-in-out 0ms forwards infinite;
+    -o-animation: brandTitleDrawing 3500ms ease-in-out 0ms forwards infinite;
+}
+
+@keyframes brandSloganDrawing {0% {stroke-width: 3;stroke-dashoffset: 21505.45703125;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #F1C10D;}}
+@-webkit-keyframes brandSloganDrawing {0% {stroke-width: 3;stroke-dashoffset: 21505.45703125;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #F1C10D;}}
+@-moz-keyframes brandSloganDrawing {0% {stroke-width: 3;stroke-dashoffset: 21505.45703125;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #F1C10D;}}
+@-o-keyframes brandSloganDrawing {0% {stroke-width: 3;stroke-dashoffset: 21505.45703125;fill-opacity: 0;}100% {stroke-width: 0;stroke-dashoffset: 0;fill-opacity: 1;stroke: #F1C10D;}}
+
+#brandSlogan {
+    animation: brandSloganDrawing 3500ms ease-in-out 0ms forwards infinite;
+    -webkit-animation: brandSloganDrawing 3500ms ease-in-out 0ms forwards infinite;
+    -moz-animation: brandSloganDrawing 3500ms ease-in-out 0ms forwards infinite;
+    -o-animation: brandSloganDrawing 3500ms ease-in-out 0ms forwards infinite;
+}
+
+
+#personalPortfolioSiteHomepageLayout path {
+    animation: custom-start-end 1s ease-in-out 0s forwards;
+}
+
+
+
+#theSunsetUkurasaPage {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#theFullMoonUkurasaPage {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#aircraftIntroAnimation {
+   background-image: linear-gradient(to bottom, #075CAB, #E7F3FE);
+}
+
+.breadcrumb {
+    text-align: center;
+}
+
+.breadcrumb {
+    display: grid;
+    list-style-type: none;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+}
+
+.breadcrumb li a {
+    color: #FFD700;
+}
+
+.breadcrumb li a:hover {
+    color: #EEBE57;
+}
+
+.card {
+    border-style: double;
+    border-width: 2px;
+    border-color: #FFD700;
+    border-radius: 10px;
+}
+
+.text-center {text-align: center;}
+
+
+
+#ukurasaPageContent {
+    fill: #FFF7D6;
+    font-family: 'Ranga', cursive;
+    font-size: 94px;
+}
+
+#LaunchUkurasaContentButton {
+    font-family: CabinRegular, Cabin;
+}
+
+
+.grid-container--fit {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.p1 {
+    padding-left: 0.188rem;
+    padding-top: 0.188rem;
+    padding-right: 0.188rem;
+    padding-bottom: 0.188rem;
+}
+
+.pl-1 {
+    padding-left: 0.188rem;
+}
+.pt-1 {
+    padding-top: 0.188rem;
+}
+.pr-1 {
+    padding-right: 0.188rem;
+}
+.pb-1 {
+    padding-bottom: 0.188rem;
+}
+
+.p2 {
+    padding-left: 0.438rem;
+    padding-top: 0.438rem;
+    padding-right: 0.438rem;
+    padding-bottom: 0.438rem;
+}
+.pl-2 {
+    padding-left: 0.438rem;
+}
+.pt-2 {
+    padding-top: 0.438rem;
+}
+.pr-2 {
+    padding-right: 0.438rem;
+}
+.pb-2 {
+    padding-bottom: 0.438rem;
+}
+
+.p3 {
+    padding-left: 0.688rem;
+    padding-top: 0.688rem;
+    padding-right: 0.688rem;
+    padding-bottom: 0.688rem;
+}
+.pl-3 {
+    padding-left: 0.688rem;
+}
+.pt-3 {
+    padding-top: 0.688rem;
+}
+.pr-3 {
+    padding-right: 0.688rem;
+}
+.pb-3 {
+    padding-bottom: 0.688rem;
+}
+
+.p4 {
+    padding-left: 1.313rem;
+    padding-top: 1.313rem;
+    padding-right: 1.313rem;
+    padding-bottom: 1.313rem;
+}
+.pl-4 {
+    padding-left: 1.313rem;
+}
+.pt-4 {
+    padding-top: 1.313rem;
+}
+.pr-4 {
+    padding-right: 1.313rem;
+}
+.pb-4 {
+    padding-bottom: 1.313rem;
+}
+
+.p5 {
+    padding-left: 2.563rem;
+    padding-top: 2.563rem;
+    padding-right: 2.563rem;
+    padding-bottom: 2.563rem;
+}
+.pl-5 {
+    padding-left: 2.563rem;
+}
+.pt-5 {
+    padding-top: 2.563rem;
+}
+.pr-5 {
+    padding-right: 2.563rem;
+}
+.pb-5 {
+    padding-bottom: 2.563rem;
+}
+
+.m1 {
+    margin-left: 0.188rem;
+    margin-top: 0.188rem;
+    margin-right: 0.188rem;
+    margin-bottom: 0.188rem;
+}
+
+.ml-1 {
+    margin-left: 0.188rem;
+}
+.mt-1 {
+    margin-top: 0.188rem;
+}
+.mr-1 {
+    margin-right: 0.188rem;
+}
+.mb-1 {
+    margin-bottom: 0.188rem;
+}
+
+.m2 {
+    margin-left: 0.438rem;
+    margin-top: 0.438rem;
+    margin-right: 0.438rem;
+    margin-bottom: 0.438rem;
+}
+.ml-2 {
+    margin-left: 0.438rem;
+}
+.mt-2 {
+    margin-top: 0.438rem;
+}
+.mr-2 {
+    margin-right: 0.438rem;
+}
+.mb-2 {
+    margin-bottom: 0.438rem;
+}
+
+.m3 {
+    margin-left: 0.688rem;
+    margin-top: 0.688rem;
+    margin-right: 0.688rem;
+    margin-bottom: 0.688rem;
+}
+.ml-3 {
+    margin-left: 0.688rem;
+}
+.mt-3 {
+    margin-top: 0.688rem;
+}
+.mr-3 {
+    margin-right: 0.688rem;
+}
+.mb-3 {
+    margin-bottom: 0.688rem;
+}
+
+.m4 {
+    margin-left: 1.313rem;
+    margin-top: 1.313rem;
+    margin-right: 1.313rem;
+    margin-bottom: 1.313rem;
+}
+.ml-4 {
+    margin-left: 1.313rem;
+}
+.mt-4 {
+    margin-top: 1.313rem;
+}
+.mr-4 {
+    margin-right: 1.313rem;
+}
+.mb-4 {
+    margin-bottom: 1.313rem;
+}
+
+.m5 {
+    margin-left: 2.563rem;
+    margin-top: 2.563rem;
+    margin-right: 2.563rem;
+    margin-bottom: 2.563rem;
+}
+.ml-5 {
+    margin-left: 2.563rem;
+}
+.mt-5 {
+    margin-top: 2.563rem;
+}
+.mr-5 {
+    margin-right: 2.563rem;
+}
+.mb-5 {
+    margin-bottom: 2.563rem;
+}
